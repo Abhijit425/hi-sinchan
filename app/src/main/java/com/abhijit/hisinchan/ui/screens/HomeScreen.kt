@@ -264,7 +264,8 @@ private fun PrivacyChip(wakeOn: Boolean, state: WakeBus.State, detail: String, m
 private fun AvatarStage(vm: MainViewModel, modifier: Modifier) {
     val ui by vm.ui.collectAsStateWithLifecycle()
     BoxWithConstraints(modifier, contentAlignment = Alignment.Center) {
-        val side = minOf(maxWidth, maxHeight * 0.78f).coerceAtMost(600.dp)
+        // Leave room for the speech bubble (86dp) and status pill (~64dp), e.g. when the keyboard is open.
+        val side = minOf(maxWidth, maxHeight - 160.dp).coerceIn(96.dp, 600.dp)
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             // Speech bubble: what you're saying (live) or what Sinchan is saying.
             val bubbleText = when {

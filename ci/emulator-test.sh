@@ -36,7 +36,12 @@ PY
 
 has_text() { dump; grep -qi -- "$1" $OUT/ui.xml; }
 
-type_text() { adb shell input text "$(echo "$1" | sed 's/ /%s/g; s/'"'"'/\\'"'"'/g')"; }
+type_text() {
+  adb shell input text "$(echo "$1" | sed 's/ /%s/g; s/?//g')"
+  # emulator IME is slow: wait until the last word is visible in the field
+  last=$(echo "$1" | awk '{print $NF}' | tr -d '?')
+  for i in $(seq 1 30); do has_text "$last" && break; sleep 2; done
+}
 
 RESULT=0
 check() { if has_text "$1"; then echo "PASS: $2"; else echo "FAIL: $2 (missing '$1')"; RESULT=1; fi; }
@@ -58,7 +63,7 @@ sleep 1
 tap_node text "Type to Sinchan" || true
 type_text "Remember that my name is Abhijit"
 adb shell input keyevent 66
-shot 04-memory-saved 5
+shot 04-memory-saved 6
 check "remember that your name is Abhijit" "memory save confirmation"
 
 # Restart the app process completely
@@ -66,13 +71,13 @@ adb shell am force-stop $PKG
 sleep 2
 adb shell am start -W -n $PKG/.MainActivity
 shot 05-after-restart 6
-check "Abhijit" "name recalled in greeting after restart"
+check ", Abhijit!" "name recalled in greeting after restart"
 tap_node content-desc "Type instead"
 sleep 1
 tap_node text "Type to Sinchan" || true
 type_text "What do you remember about me?"
 adb shell input keyevent 66
-shot 06-recall 5
+shot 06-recall 8
 check "your name is Abhijit" "memory recalled after restart"
 
 # Memory screen
