@@ -75,7 +75,7 @@ check ", Abhijit!" "name recalled in greeting after restart"
 tap_node content-desc "Type instead"
 sleep 1
 tap_node text "Type to Sinchan" || true
-type_text "What do you remember about me?"
+type_text "Tell me what you remember about me please"
 adb shell input keyevent 66
 shot 06-recall 8
 check "your name is Abhijit" "memory recalled after restart"
