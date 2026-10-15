@@ -134,14 +134,14 @@ object VoskModelManager {
                 if (!resp.isSuccessful) throw IllegalStateException("Model download failed (HTTP ${resp.code})")
                 val body = resp.body ?: throw IllegalStateException("Empty model download")
                 val total = body.contentLength()
-                var read = 0L
+                var bytesRead = 0L
                 var lastPct = -1
                 val counting = object : java.io.FilterInputStream(body.byteStream()) {
                     override fun read(b: ByteArray, off: Int, len: Int): Int {
                         val n = super.read(b, off, len)
                         if (n > 0 && total > 0) {
-                            read += n
-                            val pct = (read * 100 / total).toInt()
+                            bytesRead += n
+                            val pct = (bytesRead * 100 / total).toInt()
                             if (pct != lastPct && pct % 5 == 0) { lastPct = pct; onProgress("Downloading wake-word model… $pct%") }
                         }
                         return n
