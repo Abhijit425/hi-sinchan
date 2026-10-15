@@ -87,3 +87,48 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
           git add -A && git commit -qm "CI output for ${{ github.sha }}"
           git push -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" build-output
+
+  emulator-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Bundle wake-word model
+        continue-on-error: true
+        run: |
+          curl -fL --retry 3 -o model.zip https://alphacephei.com/vosk/models/vosk-model-small-en-in-0.4.zip
+          unzip -q model.zip && mkdir -p app/src/main/assets && mv vosk-model-small-en-in-0.4 app/src/main/assets/model-en-in
+      - name: Build emulator APK (adds x86_64)
+        run: ./gradlew --no-daemon assembleDebug -Pemulator
+      - name: Run on tablet emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_c
+          disable-animations: false
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          script: bash ci/emulator-test.sh 2>&1 | tee emu-test.log
+      - name: Publish emulator results
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/emu && cp -r emu-out/* /tmp/emu/ 2>/dev/null || true
+          cp emu-test.log /tmp/emu/ 2>/dev/null || true
+          echo "${{ github.sha }} ${{ job.status }}" > /tmp/emu/STATUS
+          cd /tmp/emu && git init -q -b emulator-output
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "Emulator results for ${{ github.sha }}"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" emulator-output

@@ -28,7 +28,10 @@ android {
         vectorDrawables { useSupportLibrary = true }
         // Real tablets are ARM. Dropping x86/mips native libs keeps the APK ~20 MB smaller.
         // Add "x86_64" here if you want to run it on a PC emulator.
-        ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
+        ndk {
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+            if (project.hasProperty("emulator")) abiFilters += "x86_64" // CI emulator smoke test
+        }
     }
 
     signingConfigs {
