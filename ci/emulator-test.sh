@@ -66,7 +66,7 @@ tap_node content-desc "Type instead"
 sleep 1
 tap_node text "Type to Sinchan" || true
 type_text "Remember that my name is Abhijit"
-adb shell input keyevent 66
+tap_node content-desc "Send"
 shot 04-memory-saved 6
 check "remember that your name is Abhijit" "memory save confirmation"
 
@@ -80,7 +80,7 @@ tap_node content-desc "Type instead"
 sleep 1
 tap_node text "Type to Sinchan" || true
 type_text "Tell me what you remember about me please"
-adb shell input keyevent 66
+tap_node content-desc "Send"
 shot 06-recall 8
 check "your name is Abhijit" "memory recalled after restart"
 

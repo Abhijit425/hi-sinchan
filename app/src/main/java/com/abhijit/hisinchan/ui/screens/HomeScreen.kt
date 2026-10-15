@@ -76,6 +76,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
+import androidx.compose.ui.input.key.Key
+import androidx.compose.ui.input.key.KeyEventType
+import androidx.compose.ui.input.key.isShiftPressed
+import androidx.compose.ui.input.key.key
+import androidx.compose.ui.input.key.onPreviewKeyEvent
+import androidx.compose.ui.input.key.type
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -147,7 +153,13 @@ fun HomeScreen(vm: MainViewModel, navigate: (String) -> Unit) {
                     Row(Modifier.fillMaxWidth().padding(bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
                         OutlinedTextField(
                             value = draft, onValueChange = { draft = it },
-                            modifier = Modifier.weight(1f),
+                            modifier = Modifier.weight(1f).onPreviewKeyEvent { e ->
+                                // Hardware keyboard: Enter sends, Shift+Enter makes a new line.
+                                if (e.key == Key.Enter && !e.isShiftPressed) {
+                                    if (e.type == KeyEventType.KeyUp && draft.isNotBlank()) { vm.sendText(draft); draft = "" }
+                                    true
+                                } else false
+                            },
                             placeholder = { Text("Type to Sinchan… (try “remember that my name is Abhijit”)") },
                             maxLines = 4,
                             shape = RoundedCornerShape(20.dp),
