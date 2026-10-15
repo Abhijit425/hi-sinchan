@@ -2,7 +2,11 @@ name: Build APK
 
 on:
   push:
+    branches: [main]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -29,21 +33,30 @@ jobs:
           du -sh app/src/main/assets/model-en-in
 
       - name: Unit tests
-        run: ./gradlew --no-daemon testDebugUnitTest
+        run: |
+          mkdir -p ci-logs
+          set -o pipefail
+          ./gradlew --no-daemon testDebugUnitTest 2>&1 | tee ci-logs/unit-tests.log
 
       - name: Build debug APK
-        run: ./gradlew --no-daemon assembleDebug
+        run: |
+          set -o pipefail
+          ./gradlew --no-daemon assembleDebug 2>&1 | tee ci-logs/assemble.log
 
       - name: Lint (report only)
         continue-on-error: true
-        run: ./gradlew --no-daemon lintDebug
+        run: |
+          set -o pipefail
+          ./gradlew --no-daemon lintDebug 2>&1 | tail -40 | tee ci-logs/lint.log
 
       - name: APK info
         run: |
-          ls -la app/build/outputs/apk/debug/
+          ls -la app/build/outputs/apk/debug/ | tee ci-logs/apk-info.txt
           BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
-          $BT/aapt2 dump badging app/build/outputs/apk/debug/app-debug.apk | head -20
-          $BT/apksigner verify --print-certs app/build/outputs/apk/debug/app-debug.apk | head -5
+          $BT/aapt2 dump badging app/build/outputs/apk/debug/app-debug.apk | head -25 | tee -a ci-logs/apk-info.txt
+          $BT/apksigner verify --verbose --print-certs app/build/outputs/apk/debug/app-debug.apk | head -12 | tee -a ci-logs/apk-info.txt
+          unzip -l app/build/outputs/apk/debug/app-debug.apk | grep -E "model-en-in/(am|conf|graph)/" | head -8 | tee -a ci-logs/apk-info.txt
+          sha256sum app/build/outputs/apk/debug/app-debug.apk | tee -a ci-logs/apk-info.txt
 
       - uses: actions/upload-artifact@v4
         with:
@@ -57,3 +70,20 @@ jobs:
           path: |
             app/build/reports/
             app/build/test-results/
+
+      - name: Publish logs + APK to build-output branch
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p /tmp/out && cp -r ci-logs /tmp/out/ 2>/dev/null || true
+          cp -r app/build/test-results /tmp/out/ 2>/dev/null || true
+          cp app/build/reports/lint-results-debug.txt /tmp/out/ 2>/dev/null || true
+          cp app/build/outputs/apk/debug/app-debug.apk /tmp/out/HiSinchan-debug.apk 2>/dev/null || true
+          echo "${{ github.sha }} ${{ job.status }}" > /tmp/out/STATUS
+          cd /tmp/out
+          git init -q -b build-output
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "CI output for ${{ github.sha }}"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" build-output
