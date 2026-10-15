@@ -1,0 +1,45 @@
+Performing Streamed Install
+Success
+Starting: Intent { cmp=com.abhijit.hisinchan/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.abhijit.hisinchan/.MainActivity
+TotalTime: 6904
+WaitTime: 6940
+Complete
+screenshot 01-first-launch
+tapped text=Let's go at 1713 1172
+screenshot 02-home
+PASS: home screen greeting rendered
+tapped content-desc=Sinchan, feeling at 1280 857
+screenshot 03-avatar-tap
+tapped content-desc=Type instead at 900 1552
+tapped text=Type to Sinchan at 510 1371
+tapped content-desc=Send at 2464 655
+screenshot 04-memory-saved
+PASS: memory save confirmation
+Starting: Intent { cmp=com.abhijit.hisinchan/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.abhijit.hisinchan/.MainActivity
+TotalTime: 5385
+WaitTime: 5416
+Complete
+screenshot 05-after-restart
+PASS: name recalled in greeting after restart
+tapped content-desc=Type instead at 900 1552
+tapped text=Type to Sinchan at 510 1371
+tapped content-desc=Send at 2464 655
+screenshot 06-recall
+PASS: memory recalled after restart
+tapped content-desc=Memory at 2156 120
+screenshot 07-memory-screen
+PASS: memory listed in memory manager
+tapped content-desc=Settings at 2364 120
+screenshot 08-settings
+tapped text=Listens fully on-device at 1059 395
+screenshot 09-wake-enabled
+screenshot 10-home-wake
+PASS: wake-word service listening (on-device Vosk)
+PASS: no crashes in logcat
+RESULT=0

@@ -1,0 +1,200 @@
+D/AndroidRuntime( 4680): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 4680): Using default boot image
+I/AndroidRuntime( 4680): Leaving lock profiling enabled
+D/AndroidRuntime( 4680): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 4680): Shutting down VM
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{3b7e59a com.google.android.youtube/10139} BLOCKED
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{c5ddecb com.google.android.apps.messaging/10130} BLOCKED
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{f3a9fee com.google.android.apps.maps/10152} BLOCKED
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{9dbe6a8 com.google.android.contacts/10154} BLOCKED
+D/AndroidRuntime( 4789): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 4789): Using default boot image
+I/AndroidRuntime( 4789): Leaving lock profiling enabled
+D/AndroidRuntime( 4789): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 4789): Shutting down VM
+I/hijit.hisinchan( 3641): Background young concurrent copying GC freed 127963(4700KB) AllocSpace objects, 0(0B) LOS objects, 27% free, 8097KB/10MB, paused 19us,22us total 174.465ms
+W/hijit.hisinchan( 3641): Suspending all threads took: 6.881ms
+I/hijit.hisinchan( 3641): Background concurrent copying GC freed 116343(5252KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 6205KB/12MB, paused 28us,6.961ms total 178.010ms
+D/AndroidRuntime( 4946): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 4946): Using default boot image
+I/AndroidRuntime( 4946): Leaving lock profiling enabled
+D/AndroidRuntime( 4946): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 4946): Shutting down VM
+D/AndroidRuntime( 5043): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 5043): Using default boot image
+I/AndroidRuntime( 5043): Leaving lock profiling enabled
+D/AndroidRuntime( 5043): Calling main entry com.android.commands.uiautomator.Launcher
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{54489d7 com.google.android.apps.messaging/10130} BLOCKED
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{61348fb com.google.android.settings.intelligence/10118} BLOCKED
+D/AndroidRuntime( 5043): Shutting down VM
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+I/ImeTracker( 3641): com.abhijit.hisinchan:a5ba2b1c: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+I/ImeTracker( 3641): com.abhijit.hisinchan:f57089da: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/AndroidIME( 1543): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+I/ImeTracker(  521): com.abhijit.hisinchan:a5ba2b1c: onFailed at PHASE_WM_SHOW_IME_RUNNER
+D/CoreBackPreview(  521): Window{11b1952 u0 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@adef801, mPriority=0, mIsAnimationCallback=false}
+W/InputDispatcher(  521): Dispatching key to 11b1952 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity even though there are other unprocessed events
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{4b3cb1c com.google.android.contacts/10154} BLOCKED
+I/hijit.hisinchan( 3641): Background young concurrent copying GC freed 127083(4990KB) AllocSpace objects, 0(0B) LOS objects, 42% free, 7104KB/12MB, paused 40us,11us total 502.035ms
+I/ImeTracker( 3641): com.abhijit.hisinchan:f57089da: onShown
+I/InputDispatcher(  521): 11b1952 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity (server) spent 2873ms processing KeyEvent(deviceId=-1, eventTime=109832236616, source=KEYBOARD, displayId=-1, action=UP, flags=0x00000000, keyCode=R(46), scanCode=0, metaState=0x00000041, repeatCount=0), policyFlags=0x6b000000
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{3885c19 com.google.android.contacts/10154} BLOCKED
+E/FrameTracker( 3641): force finish cuj, time out: J<IME_INSETS_ANIMATION::0@1@com.abhijit.hisinchan>
+I/AndroidIME( 1543): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+I/AndroidIME( 1543): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+D/AndroidRuntime( 5592): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 5592): Using default boot image
+I/AndroidRuntime( 5592): Leaving lock profiling enabled
+D/AndroidRuntime( 5592): Calling main entry com.android.commands.uiautomator.Launcher
+I/hijit.hisinchan( 3641): Background concurrent copying GC freed 173761(5713KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 6672KB/13MB, paused 24us,12us total 950.457ms
+D/AndroidRuntime( 5592): Shutting down VM
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{6daf8b3 com.google.android.contacts/10154} BLOCKED
+I/ImeTracker(  521): com.abhijit.hisinchan:e713afa2: onRequestShow at ORIGIN_SERVER_START_INPUT reason ATTACH_NEW_INPUT
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, true)
+I/AndroidIME( 1543): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+I/ImeTracker( 3641): com.abhijit.hisinchan:e713afa2: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+I/hijit.hisinchan( 3641): Background young concurrent copying GC freed 129537(6109KB) AllocSpace objects, 0(0B) LOS objects, 26% free, 9820KB/13MB, paused 47us,18us total 923.185ms
+I/AppsFilter(  521): interaction: PackageSetting{b8b1d93 com.abhijit.hisinchan/10192} -> PackageSetting{d6d1984 com.google.android.contacts/10154} BLOCKED
+D/AndroidRuntime( 5928): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 5928): Using default boot image
+I/AndroidRuntime( 5928): Leaving lock profiling enabled
+D/AndroidRuntime( 5928): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 5928): Shutting down VM
+I/ActivityManager(  521): Force stopping com.abhijit.hisinchan appid=10192 user=0: from pid 6044
+I/ActivityManager(  521): Killing 3641:com.abhijit.hisinchan/u0a192 (adj 0): stop com.abhijit.hisinchan due to from pid 6044
+W/ActivityTaskManager(  521): Force removing ActivityRecord{ba1ef75 u0 com.abhijit.hisinchan/.MainActivity t8 f}}: app died, no saved state
+V/WindowManagerShell(  835): Transition requested: android.os.BinderProxy@2b92375 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.abhijit.hisinchan/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} numActivities=0 lastActiveTime=40554 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@31fef0a} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+D/CarrierSvcBindHelper( 1048): onHandleForceStop: [com.abhijit.hisinchan]
+V/ActivityManager(  521): Got obituary of 3641:com.abhijit.hisinchan
+I/ImeTracker(  521): com.abhijit.hisinchan:9565aae0: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_REMOVE_CLIENT
+I/WindowManager(  521): WIN DEATH: Window{11b1952 u0 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity}
+W/InputManager-JNI(  521): Input channel object '11b1952 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity (client)' was disposed without first being removed with the input manager!
+I/ImeTracker(  521): com.abhijit.hisinchan:9565aae0: onFailed at PHASE_SERVER_APPLY_IME_VISIBILITY
+V/WindowManager(  521): Sent Transition #7 createdAt=10-15 08:01:23.348 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.abhijit.hisinchan/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} numActivities=0 lastActiveTime=40554 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{369be91 Task{466cb0a #8 type=standard A=10192:com.abhijit.hisinchan}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+V/WindowManager(  521):     info={id=7 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{369be91 Task{466cb0a #8 type=standard A=10192:com.abhijit.hisinchan}}} m=CLOSE f=NONE leash=Surface(name=Task=8)/@0x61263cc sb=Rect(0, 0 - 2560, 1800) eb=Rect(0, 0 - 2560, 1800) d=0},{WCT{RemoteToken{a079f7 Task{5ec18e9 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x63038b sb=Rect(0, 0 - 2560, 1800) eb=Rect(0, 0 - 2560, 1800) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{227fb61 token=android.os.Binder@118dec8})/@0xd975db1 sb=Rect(0, 0 - 2560, 1800) eb=Rect(0, 0 - 2560, 1800) d=0}]}
+W/WindowManager(  521): Exception thrown during dispatchAppVisibility Window{11b1952 u0 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity EXITING}
+V/SplashScreenExceptionList(  521): SplashScreen checking exception for package com.abhijit.hisinchan (target sdk:35) -> false
+V/WindowManagerShell(  835): Transition requested: android.os.BinderProxy@70ff2e3 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=9 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.abhijit.hisinchan/.MainActivity } baseActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} topActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} origActivity=null realActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} numActivities=1 lastActiveTime=182650 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@c5dc4e0} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{b294399 com.abhijit.hisinchan.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+I/ActivityTaskManager(  521): START u0 {flg=0x10000000 cmp=com.abhijit.hisinchan/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+D/CoreBackPreview(  521): Window{19d4ddf u0 Splash Screen com.abhijit.hisinchan}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3572cf5, mPriority=0, mIsAnimationCallback=false}
+I/ActivityManager(  521): Start proc 6088:com.abhijit.hisinchan/u0a192 for next-top-activity {com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity}
+I/hijit.hisinchan( 6088): Late-enabling -Xcheck:jni
+I/hijit.hisinchan( 6088): Using CollectorTypeCC GC.
+W/hijit.hisinchan( 6088): Unexpected CPU variant for x86: x86_64.
+W/hijit.hisinchan( 6088): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+V/WindowManager(  521): Sent Transition #8 createdAt=10-15 08:01:25.692 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=9 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.abhijit.hisinchan/.MainActivity } baseActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} topActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} origActivity=null realActivity=ComponentInfo{com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity} numActivities=1 lastActiveTime=182650 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{da226c7 Task{13d33d #9 type=standard A=10192:com.abhijit.hisinchan}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{ac554f4 com.abhijit.hisinchan.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+V/WindowManager(  521):     info={id=8 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{da226c7 Task{13d33d #9 type=standard A=10192:com.abhijit.hisinchan}}} m=OPEN f=NONE leash=Surface(name=Task=9)/@0x17cbc48 sb=Rect(0, 0 - 2560, 1800) eb=Rect(0, 0 - 2560, 1800) d=0},{WCT{RemoteToken{a079f7 Task{5ec18e9 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x63038b sb=Rect(0, 0 - 2560, 1800) eb=Rect(0, 0 - 2560, 1800) d=0}]}
+W/ziparchive( 6088): Unable to open '/data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/base.dm': No such file or directory
+W/ziparchive( 6088): Unable to open '/data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/base.dm': No such file or directory
+D/nativeloader( 6088): Configuring clns-6 for other apk /data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/lib/x86_64:/data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abhijit.hisinchan
+V/GraphicsEnvironment( 6088): ANGLE GameManagerService for com.abhijit.hisinchan: false
+V/GraphicsEnvironment( 6088): com.abhijit.hisinchan is not listed in per-application setting
+W/hijit.hisinchan( 6088): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+W/hijit.hisinchan( 6088): Common causes for lock verification issues are non-optimized dex code
+W/hijit.hisinchan( 6088): and incorrect proguard optimizations.
+W/hijit.hisinchan( 6088): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+W/hijit.hisinchan( 6088): Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+W/hijit.hisinchan( 6088): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+W/hijit.hisinchan( 6088): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+D/CoreBackPreview(  521): Window{b4e468b u0 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@dffe828, mPriority=0, mIsAnimationCallback=false}
+D/CoreBackPreview(  521): Window{19d4ddf u0 Splash Screen com.abhijit.hisinchan EXITING}: Setting back callback null
+W/InputManager-JNI(  521): Input channel object '19d4ddf Splash Screen com.abhijit.hisinchan (client)' was disposed without first being removed with the input manager!
+W/InputManager-JNI(  521): Input channel object '86da20d com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity (client)' was disposed without first being removed with the input manager!
+W/ziparchive(  521): Unable to open '/data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/base.dm': No such file or directory
+I/ActivityTaskManager(  521): Displayed com.abhijit.hisinchan/.MainActivity for user 0: +5s385ms
+I/ImeTracker(  521): com.abhijit.hisinchan:73e1a161: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+I/ImeTracker(  521): com.abhijit.hisinchan:73e1a161: onCancelled at PHASE_SERVER_SHOULD_HIDE
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=0 fieldName=null extras=null}, false)
+I/hijit.hisinchan( 6088): Compiler allocated 8505KB to compile kotlin.Unit com.abhijit.hisinchan.avatar.SinchanAvatarKt.SinchanAvatar_wyGGMq8$lambda$41$lambda$40(androidx.compose.animation.core.Animatable, androidx.compose.runtime.MutableLongState, boolean, androidx.compose.animation.core.Animatable, com.abhijit.hisinchan.avatar.Gesture, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, com.abhijit.hisinchan.avatar.Emotion, androidx.compose.ui.text.TextMeasurer, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.animation.core.Animatable, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.runtime.State, androidx.compose.ui.graphics.drawscope.DrawScope)
+I/AppsFilter(  521): interaction: PackageSetting{ef5b72 com.abhijit.hisinchan/10192} -> PackageSetting{ff2dbc3 com.google.android.contacts/10154} BLOCKED
+D/ProfileInstaller( 6088): Installing profile for com.abhijit.hisinchan
+I/hijit.hisinchan( 6088): Background concurrent copying GC freed 68122(3870KB) AllocSpace objects, 14(472KB) LOS objects, 49% free, 5462KB/10MB, paused 192us,10us total 147.156ms
+D/AndroidRuntime( 6310): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6310): Using default boot image
+I/AndroidRuntime( 6310): Leaving lock profiling enabled
+D/AndroidRuntime( 6310): Calling main entry com.android.commands.uiautomator.Launcher
+I/AppsFilter(  521): interaction: PackageSetting{ef5b72 com.abhijit.hisinchan/10192} -> PackageSetting{6279780 com.google.android.contacts/10154} BLOCKED
+D/AndroidRuntime( 6310): Shutting down VM
+D/AndroidRuntime( 6337): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6337): Using default boot image
+I/AndroidRuntime( 6337): Leaving lock profiling enabled
+D/AndroidRuntime( 6337): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6337): Shutting down VM
+D/AndroidRuntime( 6421): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6421): Using default boot image
+I/AndroidRuntime( 6421): Leaving lock profiling enabled
+D/AndroidRuntime( 6421): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6421): Shutting down VM
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+I/ImeTracker( 6088): com.abhijit.hisinchan:f6b743dc: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+I/ImeTracker( 6088): com.abhijit.hisinchan:1bc81270: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+I/AndroidIME( 1543): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+I/ImeTracker(  521): com.abhijit.hisinchan:f6b743dc: onFailed at PHASE_WM_SHOW_IME_RUNNER
+D/CoreBackPreview(  521): Window{b4e468b u0 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@dcd771c, mPriority=0, mIsAnimationCallback=false}
+I/ImeTracker( 6088): com.abhijit.hisinchan:1bc81270: onShown
+I/hijit.hisinchan( 6088): Background young concurrent copying GC freed 126950(4278KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 6609KB/10MB, paused 24us,10us total 140.598ms
+E/FrameTracker( 6088): force finish cuj, time out: J<IME_INSETS_ANIMATION::0@1@com.abhijit.hisinchan>
+D/AndroidRuntime( 6595): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6595): Using default boot image
+I/AndroidRuntime( 6595): Leaving lock profiling enabled
+D/AndroidRuntime( 6595): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6595): Shutting down VM
+I/ImeTracker(  521): com.abhijit.hisinchan:bb7e33c2: onRequestShow at ORIGIN_SERVER_START_INPUT reason ATTACH_NEW_INPUT
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, true)
+I/AndroidIME( 1543): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x28001(Normal) imeOptions=0x2000004 privateImeOptions=null actionName=SEND actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+W/hijit.hisinchan( 6088): Suspending all threads took: 8.069ms
+I/hijit.hisinchan( 6088): Background young concurrent copying GC freed 115942(5616KB) AllocSpace objects, 0(0B) LOS objects, 34% free, 8129KB/12MB, paused 17us,8.362ms total 408.875ms
+I/ImeTracker( 6088): com.abhijit.hisinchan:bb7e33c2: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+D/AndroidRuntime( 6634): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6634): Using default boot image
+I/AndroidRuntime( 6634): Leaving lock profiling enabled
+D/AndroidRuntime( 6634): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6634): Shutting down VM
+D/AndroidRuntime( 6656): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6656): Using default boot image
+I/AndroidRuntime( 6656): Leaving lock profiling enabled
+D/AndroidRuntime( 6656): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6656): Shutting down VM
+I/ImeTracker( 6088): com.abhijit.hisinchan:4792695b: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/ImeTracker( 6088): com.abhijit.hisinchan:8631294d: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/GoogleInputMethodService( 1543): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.abhijit.hisinchan fieldId=0 fieldName=null extras=null}, true)
+I/ImeTracker( 6088): com.abhijit.hisinchan:8631294d: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+D/CoreBackPreview(  521): Window{b4e468b u0 com.abhijit.hisinchan/com.abhijit.hisinchan.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a969bb0, mPriority=0, mIsAnimationCallback=false}
+I/ImeTracker( 6088): com.abhijit.hisinchan:14b48edc: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+I/ImeTracker(  521): com.abhijit.hisinchan:14b48edc: onCancelled at PHASE_SERVER_SHOULD_HIDE
+I/ImeTracker( 6088): com.abhijit.hisinchan:4792695b: onHidden
+D/AndroidRuntime( 6689): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6689): Using default boot image
+I/AndroidRuntime( 6689): Leaving lock profiling enabled
+D/AndroidRuntime( 6689): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6689): Shutting down VM
+E/FrameTracker( 6088): force finish cuj, time out: J<IME_INSETS_ANIMATION::1@1@com.abhijit.hisinchan>
+W/FrameTracker( 6088): Missed App frame:UNKNOWN: 74, 35076, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@com.abhijit.hisinchan>
+W/FrameTracker( 6088): Missed SF frame:UNKNOWN: 74, 35076, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@com.abhijit.hisinchan>
+D/AndroidRuntime( 6712): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6712): Using default boot image
+I/AndroidRuntime( 6712): Leaving lock profiling enabled
+D/AndroidRuntime( 6712): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6712): Shutting down VM
+I/hijit.hisinchan( 6088): Background young concurrent copying GC freed 118551(4621KB) AllocSpace objects, 0(0B) LOS objects, 14% free, 10MB/12MB, paused 22us,1.878ms total 468.222ms
+I/hijit.hisinchan( 6088): Background concurrent copying GC freed 185500(8263KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 7328KB/14MB, paused 5.393ms,10us total 548.641ms
+D/AndroidRuntime( 6738): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 6738): Using default boot image
+I/AndroidRuntime( 6738): Leaving lock profiling enabled
+D/AndroidRuntime( 6738): Calling main entry com.android.commands.uiautomator.Launcher
+D/AndroidRuntime( 6738): Shutting down VM
+I/ActivityManager(  521): Background started FGS: Allowed [callingPackage: com.abhijit.hisinchan; callingUid: 10192; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.abhijit.hisinchan/.voice.WakeWordService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+V/ActivityThread(  521): getPackageInfo() caused update to cached ApplicationInfo for package com.abhijit.hisinchan
+D/nativeloader(  521): Configuring clns-18 for other apk . target_sdk_version=35, uses_libraries=, library_path=/data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/lib/x86_64:/data/app/~~hyDlGukWPu2XDKR8YFZZig==/com.abhijit.hisinchan-B3ofaKQLyxOQ9bRfT_FNAw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+D/AndroidRuntime( 7354): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+I/AndroidRuntime( 7354): Using default boot image
+I/AndroidRuntime( 7354): Leaving lock profiling enabled
+D/AndroidRuntime( 7354): Calling main entry com.android.commands.uiautomator.Launcher
+I/hijit.hisinchan( 6088): Background young concurrent copying GC freed 143770(6254KB) AllocSpace objects, 0(0B) LOS objects, 42% free, 8172KB/13MB, paused 95us,15us total 244.535ms
+D/AndroidRuntime( 7354): Shutting down VM

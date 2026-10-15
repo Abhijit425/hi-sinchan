@@ -1,0 +1,2 @@
+  * ServiceRecord{f63bf0e u0 com.abhijit.hisinchan/.voice.WakeWordService}
+    isForeground=true foregroundId=42 types=00000080 foregroundNoti=Notification(channel=wake_listen shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 groupKey=silent actions=1 vis=PRIVATE)
