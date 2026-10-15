@@ -37,10 +37,14 @@ PY
 has_text() { dump; grep -qi -- "$1" $OUT/ui.xml; }
 
 type_text() {
-  adb shell input text "$(echo "$1" | sed 's/ /%s/g; s/?//g')"
-  # emulator IME is slow: wait until the last word is visible in the field
-  last=$(echo "$1" | awk '{print $NF}' | tr -d '?')
-  for i in $(seq 1 30); do has_text "$last" && break; sleep 2; done
+  # The software emulator renders slowly, so send one short chunk at a time.
+  first=1
+  for w in $1; do
+    [ $first -eq 1 ] || { adb shell input keyevent 62; sleep 0.6; }
+    first=0
+    for chunk in $(echo "$w" | tr -d "?'" | fold -w 3); do adb shell input text "$chunk"; sleep 0.6; done
+  done
+  sleep 2
 }
 
 RESULT=0
