@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sinchan's face: an original round sprout-buddy with a leaf antenna -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- leaf antenna -->
+    <path android:fillColor="#7CE0A3" android:pathData="M54,30 C50,22 52,16 60,13 C62,20 60,26 54,30 Z" />
+    <path android:strokeColor="#3E2A7A" android:strokeWidth="1.6" android:pathData="M54,36 L54,29" />
+    <!-- head -->
+    <path android:fillColor="#FFD9B8" android:pathData="M54,34 C70,34 80,44 80,58 C80,72 69,80 54,80 C39,80 28,72 28,58 C28,44 38,34 54,34 Z" />
+    <!-- cheeks -->
+    <path android:fillColor="#FF9EB5" android:pathData="M36,64 a5,3.4 0 1,0 10,0 a5,3.4 0 1,0 -10,0 Z" />
+    <path android:fillColor="#FF9EB5" android:pathData="M62,64 a5,3.4 0 1,0 10,0 a5,3.4 0 1,0 -10,0 Z" />
+    <!-- eyes -->
+    <path android:fillColor="#2B1B5E" android:pathData="M40,55 a5,6 0 1,0 10,0 a5,6 0 1,0 -10,0 Z" />
+    <path android:fillColor="#2B1B5E" android:pathData="M58,55 a5,6 0 1,0 10,0 a5,6 0 1,0 -10,0 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M43,52.5 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M61,52.5 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0 Z" />
+    <!-- smile -->
+    <path android:fillColor="#C2416B" android:pathData="M47,66 Q54,74 61,66 Q54,69 47,66 Z" />
+</vector>

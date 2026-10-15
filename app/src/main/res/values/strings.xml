@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hi Sinchan</string>
+    <string name="wake_channel_name">Wake word listening</string>
+    <string name="wake_channel_desc">Shown while Sinchan listens on-device for “Hi Sinchan”.</string>
+</resources>
