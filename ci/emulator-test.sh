@@ -83,7 +83,7 @@ sleep 2
 
 # Settings: enable wake word (Vosk model unpack + foreground service)
 tap_node content-desc "Settings" && shot 08-settings 3
-tap_node text "wake word" && sleep 25
+tap_node text "Listens fully on-device" && sleep 25
 shot 09-wake-enabled 1
 adb shell input keyevent 4
 shot 10-home-wake 5
