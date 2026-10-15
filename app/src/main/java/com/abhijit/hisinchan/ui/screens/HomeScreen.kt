@@ -273,7 +273,7 @@ private fun AvatarStage(vm: MainViewModel, modifier: Modifier) {
                 else -> ""
             }
             Box(Modifier.height(86.dp).widthIn(max = 640.dp), contentAlignment = Alignment.BottomCenter) {
-                AnimatedVisibility(bubbleText.isNotBlank(), enter = fadeIn(), exit = fadeOut()) {
+                androidx.compose.animation.AnimatedVisibility(bubbleText.isNotBlank(), enter = fadeIn(), exit = fadeOut()) {
                     GlassCard(padding = 14.dp) {
                         Text(bubbleText, style = MaterialTheme.typography.bodyLarge, maxLines = 3,
                             overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center)
