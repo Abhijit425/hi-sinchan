@@ -1,0 +1,53 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResValues
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:javaPreCompileDebug
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:processDebugResources
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:13:8 'class EncryptedSharedPreferences : Any, SharedPreferences' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:14:8 'class MasterKey : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:177:19 'class MasterKey : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:177:29 'constructor(p0: @NonNull() Context!): MasterKey.Builder' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:177:59 'class MasterKey : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:177:69 'enum class KeyScheme : Enum<MasterKey.KeyScheme!>' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:178:9 'class EncryptedSharedPreferences : Any, SharedPreferences' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:182:13 'class EncryptedSharedPreferences : Any, SharedPreferences' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:182:40 'enum class PrefKeyEncryptionScheme : Enum<EncryptedSharedPreferences.PrefKeyEncryptionScheme!>' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:183:13 'class EncryptedSharedPreferences : Any, SharedPreferences' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/data/Settings.kt:183:40 'enum class PrefValueEncryptionScheme : Enum<EncryptedSharedPreferences.PrefValueEncryptionScheme!>' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/memory/Memory.kt:179:16 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/ui/screens/HomeScreen.kt:240:34 'val Icons.Filled.HelpOutline: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.HelpOutline.
+w: file:///home/runner/work/hi-sinchan/hi-sinchan/app/src/main/java/com/abhijit/hisinchan/ui/screens/HomeScreen.kt:403:53 'val Icons.Filled.Subject: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Subject.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:processDebugJavaRes
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+> Task :app:testDebugUnitTest
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1792051020908.json
+
+BUILD SUCCESSFUL in 42s
+26 actionable tasks: 26 executed

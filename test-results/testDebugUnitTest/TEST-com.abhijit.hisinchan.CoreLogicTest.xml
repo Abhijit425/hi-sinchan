@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.abhijit.hisinchan.CoreLogicTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-15T07:57:36" hostname="runnervmmprz5" time="0.04">
+  <properties/>
+  <testcase name="rememberVariants" classname="com.abhijit.hisinchan.CoreLogicTest" time="0.021"/>
+  <testcase name="wakePhrase" classname="com.abhijit.hisinchan.CoreLogicTest" time="0.001"/>
+  <testcase name="secondPerson" classname="com.abhijit.hisinchan.CoreLogicTest" time="0.004"/>
+  <testcase name="emotionTag" classname="com.abhijit.hisinchan.CoreLogicTest" time="0.003"/>
+  <testcase name="subjectsUpdateInsteadOfDuplicate" classname="com.abhijit.hisinchan.CoreLogicTest" time="0.007"/>
+  <testcase name="listForgetShow" classname="com.abhijit.hisinchan.CoreLogicTest" time="0.001"/>
+  <testcase name="ordinaryChatIsNotMemory" classname="com.abhijit.hisinchan.CoreLogicTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

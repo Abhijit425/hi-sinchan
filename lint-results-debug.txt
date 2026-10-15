@@ -1,0 +1,91 @@
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:25: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 35
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:103: Warning: A newer version of androidx.core:core-ktx than 1.15.0 is available: 1.19.1 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.15.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:104: Warning: A newer version of androidx.activity:activity-compose than 1.9.3 is available: 1.13.0 [GradleDependency]
+    implementation("androidx.activity:activity-compose:1.9.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:105: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:106: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:107: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:108: Warning: A newer version of androidx.lifecycle:lifecycle-service than 2.8.7 is available: 2.11.0 [GradleDependency]
+    implementation("androidx.lifecycle:lifecycle-service:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:109: Warning: A newer version of androidx.navigation:navigation-compose than 2.8.5 is available: 2.10.2 [GradleDependency]
+    implementation("androidx.navigation:navigation-compose:2.8.5")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:110: Warning: A newer version of androidx.datastore:datastore-preferences than 1.1.1 is available: 1.2.1 [GradleDependency]
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:113: Warning: A newer version of androidx.room:room-runtime than 2.6.1 is available: 2.8.5 [GradleDependency]
+    implementation("androidx.room:room-runtime:2.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:114: Warning: A newer version of androidx.room:room-ktx than 2.6.1 is available: 2.8.5 [GradleDependency]
+    implementation("androidx.room:room-ktx:2.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:115: Warning: A newer version of androidx.room:room-compiler than 2.6.1 is available: 2.8.5 [GradleDependency]
+    ksp("androidx.room:room-compiler:2.6.1")
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/home/runner/work/hi-sinchan/hi-sinchan/app/build.gradle.kts:32: Warning: Missing x86_64 ABI support for ChromeOS [ChromeOsAbiSupport]
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ChromeOsAbiSupport":
+   To properly support ChromeOS, your Android application should have an x86
+   and/or x86_64 binary as part of the build configuration. To fix the issue,
+   ensure your files are properly optimized for ARM; the binary translator
+   will then ensure compatibility with x86. Alternatively, add an abiSplit for
+   x86 within your build.gradle file and create the required x86
+   dependencies.
+
+   https://developer.android.com/ndk/guides/abis
+
+/home/runner/work/hi-sinchan/hi-sinchan/app/src/main/res/xml/network_security_config.xml:5: Warning: Insecure Base Configuration [InsecureBaseConfiguration]
+    <base-config cleartextTrafficPermitted="true">
+                                            ~~~~
+
+   Explanation for issues of type "InsecureBaseConfiguration":
+   Permitting cleartext traffic could allow eavesdroppers to intercept data
+   sent by your app, which impacts the privacy of your users. Consider only
+   allowing encrypted traffic by setting the cleartextTrafficPermitted tag to
+   false.
+
+   https://goo.gle/InsecureBaseConfiguration
+   https://developer.android.com/preview/features/security-config.html
+
+0 errors, 14 warnings

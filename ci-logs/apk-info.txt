@@ -1,0 +1,50 @@
+total 73512
+drwxr-xr-x 2 runner runner     4096 Oct 15 07:58 .
+drwxr-xr-x 3 runner runner     4096 Oct 15 07:58 ..
+-rw-r--r-- 1 runner runner 75262686 Oct 15 07:58 app-debug.apk
+-rw-r--r-- 1 runner runner      405 Oct 15 07:58 output-metadata.json
+package: name='com.abhijit.hisinchan' versionCode='1' versionName='1.0.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+minSdkVersion:'26'
+targetSdkVersion:'35'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.RECORD_AUDIO'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_MICROPHONE'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='com.abhijit.hisinchan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'Hi Sinchan'
+application-label-af:'Hi Sinchan'
+application-label-am:'Hi Sinchan'
+application-label-ar:'Hi Sinchan'
+application-label-as:'Hi Sinchan'
+application-label-az:'Hi Sinchan'
+application-label-be:'Hi Sinchan'
+application-label-bg:'Hi Sinchan'
+application-label-bn:'Hi Sinchan'
+application-label-bs:'Hi Sinchan'
+application-label-ca:'Hi Sinchan'
+application-label-cs:'Hi Sinchan'
+application-label-da:'Hi Sinchan'
+application-label-de:'Hi Sinchan'
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V2 Signer: certificate DN: CN=Android Debug, O=Android, C=US
+V2 Signer: certificate SHA-256 digest: d58c401a2982572d0dfa0387853ea246e13f309bbf3f4a441d436a9390a166ac
+V2 Signer: certificate SHA-1 digest: f44da0a7a0b555d8a26741923f75303f6cb9c3ea
+ 13767397  1981-01-01 01:01   assets/model-en-in/am/final.mdl
+      107  1981-01-01 01:01   assets/model-en-in/conf/mfcc.conf
+      289  1981-01-01 01:01   assets/model-en-in/conf/model.conf
+ 24029637  1981-01-01 01:01   assets/model-en-in/graph/Gr.fst
+ 10419698  1981-01-01 01:01   assets/model-en-in/graph/HCLr.fst
+       72  1981-01-01 01:01   assets/model-en-in/graph/disambig_tid.int
+     2751  1981-01-01 01:01   assets/model-en-in/graph/phones/word_boundary.int
+7d99d8c2aa447dc638d8b360d8553bf5d28572f10d6a14c7c3012856c65b3d43  app/build/outputs/apk/debug/app-debug.apk
